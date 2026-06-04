@@ -1,0 +1,10 @@
+wp_subdomain: redesign
+
+wp_admin_password: "{{ wp_priv_admin_password }}"
+wp_database_password: "{{ wp_priv_database_password }}"
+
+wp_reverse_proxy_pass_port: 8082
+
+wp_plugins: []
+
+wp_themes: []
