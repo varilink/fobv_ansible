@@ -65,6 +65,8 @@ wp_sites:
 
     plugins: []
 
+    themes: []
+
     reverse_proxy_pass_port: 8090
 
   staging:

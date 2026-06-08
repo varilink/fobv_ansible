@@ -68,8 +68,8 @@ wp_form_testing_config: |-
   // PayPal integration
   define( 'FOBV_PAYPAL_BRAND_NAME', 'The Friends of Bennerley Viaduct (Test)' );
   define( 'FOBV_PAYPAL_API_DOMAIN', 'https://api-m.sandbox.paypal.com' );
-  define( 'FOBV_PAYPAL_APP_CLIENT_ID', '{{ wp_priv_paypal_app_client_id }}' );
-  define( 'FOBV_PAYPAL_APP_SECRET', '{{ wp_priv_paypal_app_secret }}' );
+  define( 'FOBV_PAYPAL_APP_CLIENT_ID', '{{ wp_priv_paypal_sandbox_app_client_id }}' );
+  define( 'FOBV_PAYPAL_APP_SECRET', '{{ wp_priv_paypal_sandbox_app_secret }}' );
   define( 'FOBV_PAYPAL_WEBHOOK_ID', '{{ wp_priv_paypal_webhook_id }}' );
 
   // reCAPTCHA site key
