@@ -1,0 +1,18 @@
+wp_subdomain: friends
+
+wp_admin_password: "{{ wp_priv_admin_password }}"
+wp_database_password: "{{ wp_priv_database_password }}"
+
+wp_reverse_proxy_pass_port: 8080
+
+wp_plugins: []
+
+wp_themes: []
+
+wp_config: |-
+
+  define('WP_DEBUG', true);
+
+  // reCAPTCHA site key
+  define('VL_RECAPTCHA_SITE_KEY', '6LdG0RAtAAAAANXenwaqR2gooFp0bq3S1VBAFVsL');
+  define('VL_RECAPTCHA_SECRET_KEY', '{{ wp_priv_recaptcha_secret_key }}');
