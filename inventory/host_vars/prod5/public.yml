@@ -1,18 +1,53 @@
-wp_subdomain: friends
+# ------------------------------------------------------------------------------
+# inventory/host_vars/prod5/public.yml
+# ------------------------------------------------------------------------------
 
-wp_admin_password: "{{ wp_priv_admin_password }}"
-wp_database_password: "{{ wp_priv_database_password }}"
+---
 
-wp_reverse_proxy_pass_port: 8080
+wp_sites:
 
-wp_plugins: []
+  friends:
 
-wp_themes: []
+    admin_password: "{{ priv_wp_sites.friends.admin_password }}"
+    database_password: "{{ priv_wp_sites.friends.database_password }}"
 
-wp_config: |-
+    reverse_proxy_pass_port: 8080
 
-  define('WP_DEBUG', true);
+    plugins: []
 
-  // reCAPTCHA site key
-  define('VL_RECAPTCHA_SITE_KEY', '6LdG0RAtAAAAANXenwaqR2gooFp0bq3S1VBAFVsL');
-  define('VL_RECAPTCHA_SECRET_KEY', '{{ wp_priv_recaptcha_secret_key }}');
+    themes: []
+
+    config: |-
+      // reCAPTCHA site key
+      define(
+          'VL_RECAPTCHA_SITE_KEY',
+          '6LdG0RAtAAAAANXenwaqR2gooFp0bq3S1VBAFVsL'
+      );
+      define(
+          'VL_RECAPTCHA_SECRET_KEY',
+          '{{ priv_wp_sites.friends.recaptcha_secret_key }}'
+      );
+
+  redesign:
+
+    admin_password: "{{ priv_wp_sites.redesign.admin_password }}"
+    database_password: "{{ priv_wp_sites.redesign.database_password }}"
+
+    reverse_proxy_pass_port: 8085
+
+    plugins: []
+
+    themes: []
+
+  www:
+
+    admin_password: "{{ priv_wp_sites.www.admin_password }}"
+    database_password: "{{ priv_wp_sites.www.database_password }}"
+
+    reverse_proxy_pass_port: 8086
+
+    plugins: []
+
+    themes: []
+
+    config: "{{ priv_wp_sites.www.config }}"
