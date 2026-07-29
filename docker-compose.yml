@@ -8,12 +8,10 @@
 
 ---
 
-version: "3.6"
-
 services:
 
-  gimp:
+   gimp:
 
-    volumes:
-      - ./wordpress/gimp/:/gimp/
-      - ./wordpress/media/:/gimp/dist/
+   npm:
+
+   npx:
