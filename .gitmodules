@@ -7,15 +7,6 @@
 	path = roles
 	url = git@github.com:varilink/libraries_ansible-roles.git
 
-# Docker Tools
-
-[submodule "tools/gimp"]
-	path = tools/gimp
-	url = git@github.com:varilink/tools_gimp.git
-[submodule "tools/npm"]
-	path = tools/npm
-	url = git@github.com:varilink/tools_npm.git
-
 # Project WordPress
 
 [submodule "wordpress"]
