@@ -10,8 +10,6 @@
 
 services:
 
-   gimp:
+   ansible:
 
-   npm:
-
-   npx:
+   ansible-playbook:
