@@ -12,3 +12,6 @@
 [submodule "wordpress"]
 	path = wordpress
 	url = git@github.com:varilink/fobv_wordpress.git
+[submodule "tools/ansible"]
+	path = tools/ansible
+	url = git@github.com:varilink/tools_ansible.git
